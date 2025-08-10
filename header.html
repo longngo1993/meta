@@ -1,0 +1,30 @@
+<!-- Header markup extracted from the main pages. This file contains only the
+     structural HTML for the top navigation bar and does not include any
+     <html>, <head> or <body> tags. Styles are inherited from the main page's
+     stylesheet and the search suggestion logic is handled by the main
+     script (script.js) after this markup is inserted into the DOM. -->
+
+<!-- Main header with logo, search bar and utility icons -->
+<header class="main-header">
+  <div class="logo">META</div>
+  <div class="search" id="search-container">
+    <input type="text" id="search-input" placeholder="Bạn cần tìm kiếm sản phẩm gì?">
+    <button>Tìm kiếm</button>
+    <!-- Suggestions dropdown; initially hidden, will be populated via JS -->
+    <div id="suggestions-popup" class="suggestions-popup" style="display: none;"></div>
+  </div>
+  <div class="header-icons">
+    <div class="icon-item">
+      <img src="icons/cart-shopping.svg" alt="Giỏ hàng">
+      <span>Giỏ hàng</span>
+    </div>
+    <div class="icon-item">
+      <img src="icons/phone.svg" alt="Hotline">
+      <span>Hotline</span>
+    </div>
+    <div class="icon-item">
+      <img src="icons/user.svg" alt="Đăng nhập">
+      <span>Đăng nhập</span>
+    </div>
+  </div>
+</header>

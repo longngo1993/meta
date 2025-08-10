@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quạt cây, quạt đứng - META.vn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Containers for the shared promo bar and header. These will be populated
+       dynamically via JavaScript using content from promo.html and header.html. -->
+  <div id="promo-container"></div>
+  <div id="header-container"></div>
+
+  <!-- Breadcrumb and promotion row spanning the full content width but padded to align with the listing area -->
+  <div class="breadcrumb-promo-row">
+    <nav class="breadcrumb">
+      <img src="icons/house.svg" alt="Trang chủ" class="breadcrumb-icon">
+      <a href="index.html">Quạt, Máy làm mát</a>
+      <span>&gt;</span>
+      <span>Quạt cây, quạt đứng</span>
+    </nav>
+    <div class="promo-banner">KHUYẾN MẠI 🎁 Tặng voucher Nagakawa giảm trực tiếp 500.000đ</div>
+  </div>
+
+
+  <!-- Breadcrumb and promotion row: will be rendered inside the listing area -->
+
+
+  <!-- Listing container with filter sidebar and product listing area -->
+  <div class="main-content listing-container">
+    <!-- Filter and category sidebar -->
+    <aside class="filter-sidebar">
+      <!-- Categories section -->
+      <div class="sidebar-categories">
+        <h4>QUẠT, MÁY LÀM MÁT</h4>
+        <ul>
+          <li class="active"><img src="icons/fan.svg" alt="Quạt" class="cat-icon"> Quạt cây, Quạt đứng</li>
+          <li><img src="icons/glass-water-droplet.svg" alt="Quạt điều hoà" class="cat-icon"> Quạt điều hòa</li>
+          <li><img src="icons/snowflake.svg" alt="Máy lạnh" class="cat-icon"> Máy lạnh di động, Máy lạnh mini</li>
+          <li><img src="icons/industry.svg" alt="Quạt công nghiệp" class="cat-icon"> Quạt công nghiệp</li>
+          <li><img src="icons/fan.svg" alt="Quạt treo tường" class="cat-icon"> Quạt treo tường</li>
+          <li><img src="icons/fan.svg" alt="Quạt trần" class="cat-icon"> Quạt trần</li>
+          <li><img src="icons/industry.svg" alt="Máy làm mát công nghiệp" class="cat-icon"> Máy làm mát công nghiệp</li>
+          <li><img src="icons/fan.svg" alt="Quạt tháp" class="cat-icon"> Quạt tháp, Quạt không cánh</li>
+          <li><img src="icons/glass-water-droplet.svg" alt="Quạt phun sương" class="cat-icon"> Quạt phun sương</li>
+          <li><img src="icons/plug.svg" alt="Quạt tích điện" class="cat-icon"> Quạt tích điện</li>
+          <li><img src="icons/fan.svg" alt="Quạt đảo trần" class="cat-icon"> Quạt đảo trần</li>
+          <li><img src="icons/fan.svg" alt="Quạt thông gió" class="cat-icon"> Quạt thông gió, Quạt hút gió</li>
+          <li><img src="icons/fan.svg" alt="Quạt bàn" class="cat-icon"> Quạt bàn</li>
+        </ul>
+        <a href="#" class="view-more">Xem thêm</a>
+      </div>
+      <!-- Brand filter section -->
+      <div class="sidebar-filter brand-filter">
+        <h4>THƯƠNG HIỆU <img src="icons/magnifying-glass.svg" alt="Tìm kiếm" class="search-icon"></h4>
+        <ul class="filter-list">
+          <li><label><input type="checkbox"> Senko <span class="count">(10)</span></label></li>
+          <li><label><input type="checkbox"> Toshiba <span class="count">(11)</span></label></li>
+          <li><label><input type="checkbox"> Uniware <span class="count">(9)</span></label></li>
+          <li><label><input type="checkbox"> Mitsubishi Electric <span class="count">(5)</span></label></li>
+          <li><label><input type="checkbox"> Panasonic <span class="count">(4)</span></label></li>
+          <li><label><input type="checkbox"> KDK <span class="count">(3)</span></label></li>
+          <li><label><input type="checkbox"> Coex <span class="count">(6)</span></label></li>
+          <li><label><input type="checkbox"> Hatari <span class="count">(7)</span></label></li>
+        </ul>
+        <a href="#" class="view-more">Xem thêm</a>
+      </div>
+      <!-- Price range filter section -->
+      <div class="sidebar-filter price-filter">
+        <h4>KHOẢNG GIÁ (VND)</h4>
+        <ul class="filter-list">
+          <li><label><input type="checkbox"> 200K - 500K <span class="count">(27)</span></label></li>
+          <li><label><input type="checkbox"> 500K - 1 triệu <span class="count">(30)</span></label></li>
+          <li><label><input type="checkbox"> 1 triệu - 2 triệu <span class="count">(18)</span></label></li>
+          <li><label><input type="checkbox"> Trên 2 triệu <span class="count">(12)</span></label></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- Product listing area -->
+    <div class="listing-area">
+      <!-- Breadcrumb and quick filters section -->
+      <div class="breadcrumb-and-filters">
+        <!-- Quick filter tags for room sizes and features -->
+        <div class="filter-tags">
+          <div class="tag">Dưới 20m²</div>
+          <div class="tag">Từ 20m² - 30m²</div>
+          <div class="tag">Từ 30m² - 50m²</div>
+          <div class="tag">Từ 50m² - 70m²</div>
+          <div class="tag">Trên 70m²</div>
+          <div class="tag">Điều khiển từ xa</div>
+        </div>
+        <!-- Brand logos row using images -->
+        <div class="brand-logos">
+          <div class="brand-logo"><img src="images/brands/sunhouse.png" alt="Sunhouse"></div>
+          <div class="brand-logo"><img src="images/brands/daikiosan.png" alt="Daikiosan"></div>
+          <div class="brand-logo"><img src="images/brands/hoaphat.png" alt="Hoa Phát"></div>
+          <div class="brand-logo"><img src="images/brands/boss.png" alt="Boss"></div>
+          <div class="brand-logo"><img src="images/brands/galen.png" alt="Galen"></div>
+          <div class="brand-logo"><img src="images/brands/maxpower.png" alt="MaxPower"></div>
+          <div class="brand-logo"><img src="images/brands/saiko.png" alt="Saiko"></div>
+          <div class="brand-logo"><img src="images/brands/sanaky.png" alt="Sanaky"></div>
+          <div class="brand-logo"><img src="images/brands/yuiki.png" alt="Yuiki"></div>
+          <div class="brand-logo"><img src="images/brands/sunfan.png" alt="Sunfan"></div>
+          <div class="brand-logo more">Xem thêm</div>
+        </div>
+      </div>
+      <!-- Product count and sorting tabs -->
+      <div class="product-controls">
+        <div class="product-count">265 Quạt cây, Quạt đứng</div>
+        <div class="sorting-tabs">
+          <div class="tab active">Bán chạy nhất</div>
+          <div class="tab">Giá tăng dần</div>
+          <div class="tab">Giá giảm dần</div>
+          <div class="tab">Giảm giá</div>
+          <div class="tab">Mới nhất</div>
+          <div class="tab">Trả góp</div>
+          <div class="tab meta-suggest"><img src="icons/bag-shopping.svg" alt="META gợi ý icon"> META gợi ý</div>
+        </div>
+      </div>
+      <div class="product-list-grid">
+        <!-- Product 1 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt cây Panasonic F-409K">
+          </div>
+          <div class="product-name">Quạt cây Panasonic F-409K</div>
+          <div class="product-price">1.000.000đ <span class="old-price">1.200.000đ</span></div>
+          <div class="product-discount">-17%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(500+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 2 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt cây Toshiba F-LSD30">
+          </div>
+          <div class="product-name">Quạt cây Toshiba F‑LSD30</div>
+          <div class="product-price">950.000đ <span class="old-price">1.050.000đ</span></div>
+          <div class="product-discount">-10%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(420+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 3 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt đứng Mitsubishi LV16-RV">
+          </div>
+          <div class="product-name">Quạt đứng Mitsubishi LV16‑RV</div>
+          <div class="product-price">1.200.000đ <span class="old-price">1.400.000đ</span></div>
+          <div class="product-discount">-14%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(350+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 4 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt cây Senko DH1688">
+          </div>
+          <div class="product-name">Quạt cây Senko DH1688</div>
+          <div class="product-price">450.000đ <span class="old-price">500.000đ</span></div>
+          <div class="product-discount">-10%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(610+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 5 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt đứng Asia A16001">
+          </div>
+          <div class="product-name">Quạt đứng Asia A16001</div>
+          <div class="product-price">550.000đ <span class="old-price">650.000đ</span></div>
+          <div class="product-discount">-15%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(280+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 6 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt cây Midea FS40-15QR">
+          </div>
+          <div class="product-name">Quạt cây Midea FS40‑15QR</div>
+          <div class="product-price">700.000đ <span class="old-price">800.000đ</span></div>
+          <div class="product-discount">-12%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(320+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 7 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt cây Sharp PJ-L41RV">
+          </div>
+          <div class="product-name">Quạt cây Sharp PJ‑L41RV</div>
+          <div class="product-price">800.000đ <span class="old-price">900.000đ</span></div>
+          <div class="product-discount">-11%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(270+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+        <!-- Product 8 -->
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image">
+            <img src="icons/fan.svg" alt="Quạt đứng Sunhouse SHD7888">
+          </div>
+          <div class="product-name">Quạt đứng Sunhouse SHD7888</div>
+          <div class="product-price">900.000đ <span class="old-price">1.000.000đ</span></div>
+          <div class="product-discount">-10%</div>
+          <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(300+)</span></div>
+          <button class="buy-btn">Chọn mua</button>
+        </a>
+      </div>
+
+      <!-- Load more products button -->
+      <div class="load-more-container">
+        <button class="load-more-btn">Xem thêm 13 sản phẩm ▼</button>
+      </div>
+
+      <!-- Sale section -->
+      <div class="product-section discount-section">
+        <div class="section-header sale-header">
+          <img src="icons/bag-shopping.svg" alt="Sale icon">
+          <span>Đang giảm giá</span>
+        </div>
+        <div class="product-row">
+          <!-- Sale product 1 -->
+          <div class="product-card">
+            <div class="shipping-badge">Giao siêu tốc*</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="PAC14"></div>
+            <div class="product-discount">-24%</div>
+            <div class="product-name">Máy lạnh di động FujiHome PAC14 (14.000BTU)</div>
+            <div class="product-price">10.990.000đ <span class="old-price">12.000.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(71)</span></div>
+            <button class="buy-btn special-btn">Chỉ còn 1 sản phẩm</button>
+          </div>
+          <!-- Sale product 2 -->
+          <div class="product-card">
+            <div class="shipping-badge">Giao siêu tốc*</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="PAC12"></div>
+            <div class="product-discount">-25%</div>
+            <div class="product-name">Máy lạnh di động FujiHome PAC12 (12.000BTU)</div>
+            <div class="product-price">8.350.000đ <span class="old-price">9.000.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(50)</span></div>
+            <button class="buy-btn special-btn">Chỉ còn 2 sản phẩm</button>
+          </div>
+          <!-- Sale product 3 -->
+          <div class="product-card">
+            <div class="shipping-badge">Giao siêu tốc*</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="PAC07"></div>
+            <div class="product-discount">-14%</div>
+            <div class="product-name">Máy điều hòa di động thông minh FujiHome PAC07</div>
+            <div class="product-price">5.150.000đ <span class="old-price">6.000.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(45)</span></div>
+            <button class="buy-btn special-btn">Chỉ còn 2 sản phẩm</button>
+          </div>
+          <!-- Sale product 4 -->
+          <div class="product-card">
+            <div class="shipping-badge">Giao siêu tốc*</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="PAC10"></div>
+            <div class="product-discount">-13%</div>
+            <div class="product-name">Máy lạnh di động FujiHome PAC10 (10.000BTU)</div>
+            <div class="product-price">6.690.000đ <span class="old-price">7.500.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(30)</span></div>
+            <button class="buy-btn special-btn">Chỉ còn 2 sản phẩm</button>
+          </div>
+          <!-- Sale product 5 -->
+          <div class="product-card">
+            <div class="shipping-badge">Giao siêu tốc*</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="MPAC10"></div>
+            <div class="product-discount">-20%</div>
+            <div class="product-name">Máy điều hòa di động thông minh Fujie MPAC10 (10.000BTU)</div>
+            <div class="product-price">6.150.000đ <span class="old-price">7.200.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(40)</span></div>
+            <button class="buy-btn special-btn">Chỉ còn 1 sản phẩm</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hot 2025 section -->
+      <div class="product-section hot-section">
+        <div class="section-header hot-header">
+          <img src="icons/snowflake.svg" alt="Hot icon">
+          <span>Máy lạnh di động, Máy lạnh mini hot 2025</span>
+        </div>
+        <div class="product-row">
+          <!-- Hot product 1 -->
+          <div class="product-card">
+            <div class="product-discount">-24%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="PC-09TLS3"></div>
+            <div class="product-name">Máy lạnh di động Casper PC‑09TLS3</div>
+            <div class="product-price">4.990.000đ <span class="old-price">5.500.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(66)</span></div>
+            <button class="buy-btn">Chọn mua</button>
+          </div>
+          <!-- Hot product 2 -->
+          <div class="product-card">
+            <div class="product-discount">-14%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="MPAC10"></div>
+            <div class="product-name">Điều hòa di động thông minh Fujie MPAC10 (10.000BTU)</div>
+            <div class="product-price">6.150.000đ <span class="old-price">7.200.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(55)</span></div>
+            <button class="buy-btn">Chọn mua</button>
+          </div>
+          <!-- Hot product 3 -->
+          <div class="product-card">
+            <div class="product-discount">-10%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="KP-128BM"></div>
+            <div class="product-name">Điều hòa không khí di động KoolMan KP‑128BM 12.000 BTU</div>
+            <div class="product-price">8.500.000đ <span class="old-price">9.000.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(60)</span></div>
+            <button class="buy-btn">Chọn mua</button>
+          </div>
+          <!-- Hot product 4 -->
+          <div class="product-card">
+            <div class="product-discount">-20%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="SAC-1800"></div>
+            <div class="product-name">Máy điều hòa không khí di động Nakami SAC‑1800 (9.000BTU)</div>
+            <div class="product-price">12.860.000đ <span class="old-price">13.500.000đ</span></div>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="sold">(34)</span></div>
+            <button class="buy-btn">Chọn mua</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Viewed products section -->
+      <div class="viewed-section">
+        <h3>Bạn đã xem</h3>
+        <div class="viewed-tags">
+          <span class="tag">Máy rửa xe gia đình</span>
+          <span class="tag">Máy lọc nước RO</span>
+          <span class="tag">Tủ lạnh mini</span>
+          <a href="#" class="clear-history">Xóa lịch sử</a>
+        </div>
+        <div class="viewed-products">
+          <!-- Viewed product 1 -->
+          <div class="viewed-card">
+            <div class="product-discount">-17%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="Viewed product"></div>
+            <div class="product-name">Máy phun xịt rửa áp lực cao Bosch Easy AQ7 120 ...</div>
+            <div class="product-price">1.950.000đ <span class="old-price">2.350.000đ</span></div>
+          </div>
+          <!-- Viewed product 2 -->
+          <div class="viewed-card">
+            <div class="product-discount">-30%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="Viewed product"></div>
+            <div class="product-name">Máy lọc nước RO Panasonic TK‑CA81S3-VN</div>
+            <div class="product-price">6.990.000đ <span class="old-price">9.900.000đ</span></div>
+          </div>
+          <!-- Viewed product 3 -->
+          <div class="viewed-card">
+            <div class="product-discount">-30%</div>
+            <div class="product-image"><img src="icons/snowflake.svg" alt="Viewed product"></div>
+            <div class="product-name">Tủ lạnh mini kính cường lực HR S646GB 46 lít</div>
+            <div class="product-price">2.590.000đ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured categories section -->
+      <div class="featured-section">
+        <div class="featured-header"><span class="fire">🔥</span> Danh mục nổi bật</div>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <span class="discount-label">-43%</span>
+            <div class="icon-wrapper"><img src="icons/fan.svg" alt="Quạt"></div>
+            <div class="card-title">Quạt, Máy làm mát</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/glass-water-droplet.svg" alt="Điều hoà"></div>
+            <div class="card-title">Điều hòa</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/tv.svg" alt="Tivi"></div>
+            <div class="card-title">Tivi</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/house-chimney.svg" alt="Tủ lạnh"></div>
+            <div class="card-title">Tủ lạnh</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-43%</span>
+            <div class="icon-wrapper"><img src="icons/industry.svg" alt="Máy giặt"></div>
+            <div class="card-title">Máy giặt</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-43%</span>
+            <div class="icon-wrapper"><img src="icons/glass-water-droplet.svg" alt="Cây nước nóng lạnh"></div>
+            <div class="card-title">Cây nước nóng lạnh</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-38%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy làm đá viên"></div>
+            <div class="card-title">Máy làm đá viên</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy rửa chén bát"></div>
+            <div class="card-title">Máy rửa chén bát</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-43%</span>
+            <div class="icon-wrapper"><img src="icons/plug.svg" alt="Nồi cơm điện"></div>
+            <div class="card-title">Nồi cơm điện</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy sấy quần áo"></div>
+            <div class="card-title">Máy sấy quần áo</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy hút bụi"></div>
+            <div class="card-title">Máy hút bụi</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy pha cà phê"></div>
+            <div class="card-title">Máy pha cà phê</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Máy xay đa năng"></div>
+            <div class="card-title">Máy xay đa năng</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-42%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Lò vi sóng"></div>
+            <div class="card-title">Lò vi sóng</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-44%</span>
+            <div class="icon-wrapper"><img src="icons/snowflake.svg" alt="Các loại bếp"></div>
+            <div class="card-title">Các loại bếp</div>
+          </div>
+          <div class="featured-card">
+            <span class="discount-label">-41%</span>
+            <div class="icon-wrapper"><img src="icons/ice-cream.svg" alt="Máy lọc không khí"></div>
+            <div class="card-title">Máy lọc không khí</div>
+          </div>
+        </div>
+        <div class="more-categories-container">
+          <a href="#" class="more-categories">Xem thêm chuyên mục</a>
+        </div>
+      </div>
+
+      <!-- Information section -->
+      <div class="info-section">
+        <p><strong>Máy lạnh di động, máy lạnh mini</strong> là những chiếc máy lạnh có tính cơ động cao, không cần lắp đặt nên rất được ưa chuộng sử dụng hiện nay.</p>
+        <div class="quick-links">
+          <h4>Xem nhanh nội dung</h4>
+          <ul>
+            <li><a href="#">Máy lạnh di động, máy lạnh mini là gì? Có những loại nào?</a></li>
+            <li><a href="#">Máy lạnh di động, máy lạnh mini có đặc điểm gì? Có tốt không?</a></li>
+            <li><a href="#">Máy lạnh di động, máy lạnh mini mua ở đâu giá rẻ?</a></li>
+          </ul>
+          <a href="#" class="view-more-info">Xem thêm</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer imported from external file -->
+  <object data="footer.html" type="text/html" class="footer-object"></object>
+
+  <!-- Include main script for search suggestions and other interactions -->
+  <script src="script.js"></script>
+</body>
+</html>
