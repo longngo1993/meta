@@ -115,6 +115,11 @@ a {
   border-radius: 4px;
   cursor: pointer;
   object-fit: cover;
+  box-sizing: border-box;
+}
+
+.thumbnail-list img.active {
+  border: 2px solid #e31e24;
 }
 .product-info {
   flex: 1 1 50%;
