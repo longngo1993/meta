@@ -241,12 +241,37 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  /**
+   * Initialize the product image gallery. Clicking a thumbnail updates
+   * the main image and highlights the selected thumbnail. If the
+   * necessary elements are missing (e.g., on non-product pages), the
+   * function exits without errors.
+   */
+  function initProductImageGallery() {
+    const mainImage = document.querySelector('.product-gallery .main-image');
+    const thumbnails = document.querySelectorAll('.thumbnail-list img');
+    if (!mainImage || thumbnails.length === 0) {
+      return;
+    }
+    thumbnails.forEach(function (thumb) {
+      thumb.addEventListener('click', function () {
+        mainImage.src = this.src;
+        thumbnails.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+    // Highlight the thumbnail matching the main image, or fallback to the first
+    let active = Array.from(thumbnails).find(t => t.src === mainImage.src);
+    (active || thumbnails[0]).classList.add('active');
+  }
+
   // Load the shared header and promo bar when the page loads
   loadHeaderAndPromo();
 
   // Initialize product detail controls (quantity selector and capacity option buttons)
   // If these elements are not present (e.g., on other pages), the function will do nothing.
   initProductDetailControls();
+  initProductImageGallery();
 
   /**
    * Hover panel for side menu categories
